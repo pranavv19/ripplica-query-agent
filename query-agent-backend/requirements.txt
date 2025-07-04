@@ -1,0 +1,6 @@
+google-generativeai
+playwright
+faiss-cpu
+sentence-transformers
+numpy
+requests 

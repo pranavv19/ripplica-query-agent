@@ -1,0 +1,30 @@
+# Python backend ignores
+query-agent-backend/__pycache__/
+query-agent-backend/*.pyc
+query-agent-backend/*.pyo
+query-agent-backend/.env
+query-agent-backend/cache.json
+query-agent-backend/index.faiss
+query-agent-backend/metadata.json
+query-agent-backend/my_chrome_profile/
+query-agent-backend/chrome_profile_data/
+query-agent-backend/*.html
+
+# Streamlit frontend ignores
+frontend/.streamlit/secrets.toml
+frontend/.env
+frontend/__pycache__/
+frontend/*.pyc
+frontend/*.pyo
+
+# General OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Virtual environments
+venv/
+.env/ 
