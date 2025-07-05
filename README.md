@@ -1,8 +1,9 @@
-# Ripplica Query Agent Backend
+# Ripplica Query Agent
 
 This backend is a modular Python pipeline for classifying queries, scraping the web, summarizing results, and caching answers using semantic and LLM-based matching. **There is currently NO REST API or server—usage is via the command line only.**
 
 ## Features
+
 - Query classification (Gemini)
 - Web scraping (Playwright, DuckDuckGo)
 - Summarization (Gemini)
@@ -11,6 +12,11 @@ This backend is a modular Python pipeline for classifying queries, scraping the 
 - Command-line interface (CLI)
 
 ---
+
+## Demo
+
+
+[Watch the demo video](https://drive.google.com/file/d/1RlmeMWbsKVlCwQemyf5gw0SCpRzjzuqV/view?usp=sharing)
 
 ## Setup
 

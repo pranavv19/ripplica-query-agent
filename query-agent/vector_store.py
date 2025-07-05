@@ -8,7 +8,7 @@ from embedder import get_embedding
 EMBEDDING_DIM = 384  # all-MiniLM-L6-v2 output size
 FAISS_INDEX_FILE = "index.faiss"
 METADATA_FILE = "metadata.json"
-SIMILARITY_THRESHOLD = 0.85  # Reverted to previous value
+SIMILARITY_THRESHOLD = 0.85 
 
 # Initialize index
 if os.path.exists(FAISS_INDEX_FILE):
@@ -16,7 +16,6 @@ if os.path.exists(FAISS_INDEX_FILE):
 else:
     index = faiss.IndexFlatIP(EMBEDDING_DIM)
 
-# In-memory metadata (list of dicts with query and summary)
 if os.path.exists(METADATA_FILE):
     with open(METADATA_FILE, "r") as f:
         metadata = json.load(f)
