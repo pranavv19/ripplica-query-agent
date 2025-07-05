@@ -1,14 +1,4 @@
 # Python backend ignores
-query-agent-backend/__pycache__/
-query-agent-backend/*.pyc
-query-agent-backend/*.pyo
-query-agent-backend/.env
-query-agent-backend/cache.json
-query-agent-backend/index.faiss
-query-agent-backend/metadata.json
-query-agent-backend/my_chrome_profile/
-query-agent-backend/chrome_profile_data/
-query-agent-backend/*.html
 
 # Streamlit frontend ignores
 frontend/.streamlit/secrets.toml
@@ -27,4 +17,14 @@ Thumbs.db
 
 # Virtual environments
 venv/
-.env/ 
+.env/
+
+# Additional ignore patterns
+__pycache__/
+*.pyc
+my_chrome_profile/
+chrome_profile_data/
+query-agent/__pycache__/
+query-agent/*.pyc
+query-agent/my_chrome_profile/
+query-agent/chrome_profile_data/ 
