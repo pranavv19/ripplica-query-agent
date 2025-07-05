@@ -14,6 +14,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 def classify_query(query: str) -> Literal["web search", "assistant task", "unknown"]:
     prompt = (
         "Classify the following user query as either a 'web search query' or a 'personal assistant task'.\n"
+        "Web search queries are those that are asking for information from the web.\n"
         "Only reply with one of: 'web search' or 'assistant task'.\n\n"
         f"Query: {query}"
     )

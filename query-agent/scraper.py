@@ -4,9 +4,8 @@ import urllib.robotparser
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, unquote_plus
 
-# DuckDuckGo's HTML-only search endpoint
 DDG_HTML = "https://duckduckgo.com/html?q="
-HEADLESS = False  # Set True to hide the browser
+HEADLESS = False 
 
 def search_and_scrape(query: str, max_results: int = 5) -> list[str]:
     with sync_playwright() as p:
